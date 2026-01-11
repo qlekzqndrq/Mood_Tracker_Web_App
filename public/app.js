@@ -419,7 +419,7 @@ async function loadChart() {
                         y: {
                             display: true,
                             min: 0,
-                            sugestedmax: 5,
+                            sugestedMax: 5,
                             grid: {
                                 drawBorder: false,
                                 color: (context) => {

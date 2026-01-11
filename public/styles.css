@@ -529,3 +529,36 @@ textarea { resize: none; height: 120px; }
     font-weight: 700; /* Bold */
     color: var(--blue-600); /* Aceeași culoare ca butonul */
 }
+
+/* --- GOOGLE TRANSLATE - VARIANTA SIMPLĂ --- */
+/* 1. Ascunde doar bara albastră de sus a paginii */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+} 
+body {
+    top: 0px !important; 
+}
+
+/* 2. Stilizăm CUTIA butonului (Containerul) */
+.goog-te-gadget-simple {
+    background-color: #FFFFFF !important; /* Alb */
+    border: 2px solid #CBCDD0 !important; /* Bordura gri a site-ului tău */
+    border-radius: 12px !important;       /* Rotunjit */
+    padding: 4px 8px !important;         /* Spațiu interior */
+    font-size: 13px !important;
+    display: flex !important;
+    align-items: center !important;
+    font-family: 'Reddit Sans', sans-serif !important;
+}
+
+/* 3. Când pui mouse-ul pe el -> bordură albastră */
+.goog-te-gadget-simple:hover {
+    border-color: #4865DB !important;
+}
+
+/* 4. Asigură-te că link-urile din interior nu sunt albastre urâte */
+.goog-te-gadget-simple a {
+    text-decoration: none !important;
+    color: #57577B !important; /* Culoarea textului tău */
+    font-weight: 600 !important;
+}
